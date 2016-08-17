@@ -10,7 +10,6 @@
       position: relative;
       height: 40vw;
       overflow: hidden;
-      background: red;
     }
     .momentum-img img {
       position: absolute;
@@ -37,19 +36,25 @@
       letter-spacing: 20px;
       margin-top: 500px;
     }
-    .yeah p {
+    .yeah span {
       display: inline-block;
     }
   </style>
 <body>
 
-<header class="momentum-img">
-  <img src="http://i.imgur.com/qytLCK9.jpg" alt="Paris" data-momentum='{"props": { "translateY": "25.78vw" }, "opacity": 0}'>
+
+
+<div class="momentum-img">
+  <img src="http://i.imgur.com/qytLCK9.jpg" data-momentum='{"props": { "translateY": "25.78vw", "opacity": 0 }}'>
   <h1>Parallax effect</h1>
-</header>
+</div>
 
 <div class="yeah">
-  <p data-momentum='{"props": { "translateZ": "-600px" } }'>Y</p><p data-momentum='{"props": { "translateZ": "-500px" } }'>e</p><p data-momentum='{"props": { "translateZ": "-400px" } }'>a</p><p data-momentum='{"props": { "translateZ": "-300px" } }'>a</p><p data-momentum='{"props": { "translateZ": "-200px" }}'>a</p><p data-momentum='{"props": { "translateZ": "-100px" } }'>h</p><p data-momentum='{"props": { "rotateX": "1000deg" } }'>!</p>
+  <span data-momentum='{"props": { "translateZ": "-600px" } }'>Y</span><span data-momentum='{"props": { "translateZ": "-500px" } }'>e</span><span data-momentum='{"props": { "translateZ": "-400px" } }'>a</span><span data-momentum='{"props": { "translateZ": "-300px" } }'>a</span><span data-momentum='{"props": { "translateZ": "-200px" }}'>a</span><span data-momentum='{"props": { "translateZ": "-100px" } }'>h</span><span data-momentum='{"props": { "rotateX": "1000deg" } }'>!</span>
+</div>
+
+<div class="yeah">
+  <span data-momentum='{"props": { "translateX": "50vw" }, "smoothness": 20 }'>Y</span>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
