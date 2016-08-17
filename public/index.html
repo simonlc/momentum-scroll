@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <title>momentum-scroll demo</title>
+  <style>
+    body {
+      min-height: 300vh;
+      padding-top: 100vh;
+    }
+    .momentum-img {
+      position: relative;
+      height: 40vw;
+      overflow: hidden;
+      background: red;
+    }
+    .momentum-img img {
+      position: absolute;
+      width: 100%;
+      bottom:0;
+      left: 0;
+    }
+    .momentum-img h1 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: 0;
+      text-transform: uppercase;
+      color: white;
+      font-size: 6vw;
+      text-align: center;
+    }
+
+    .yeah {
+      color: #333;
+      font-size: 8em;
+      letter-spacing: 20px;
+      margin-top: 500px;
+    }
+    .yeah p {
+      display: inline-block;
+    }
+  </style>
+<body>
+
+<header class="momentum-img">
+  <img src="http://i.imgur.com/qytLCK9.jpg" alt="Paris" data-momentum='{"props": { "translateY": "25.78vw" }, "opacity": 0}'>
+  <h1>Parallax effect</h1>
+</header>
+
+<div class="yeah">
+  <p data-momentum='{"props": { "translateZ": "-600px" } }'>Y</p><p data-momentum='{"props": { "translateZ": "-500px" } }'>e</p><p data-momentum='{"props": { "translateZ": "-400px" } }'>a</p><p data-momentum='{"props": { "translateZ": "-300px" } }'>a</p><p data-momentum='{"props": { "translateZ": "-200px" }}'>a</p><p data-momentum='{"props": { "translateZ": "-100px" } }'>h</p><p data-momentum='{"props": { "rotateX": "1000deg" } }'>!</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/momentum-scroll.js"></script>
