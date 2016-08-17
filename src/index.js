@@ -90,6 +90,7 @@ Momentum.prototype.createMomentums = function createMomentums(parent) {
 
 Momentum.prototype.makeDefaults = function makeDefaults($el, data) {
   var windowHeight = $(window).height();
+  // TODO Make better default that offsets from-scroll rather tahn overides it.
   data.scrollFrom = data['from-scroll'] || Math.max(0, $el.offset().top - windowHeight);
   // TODO: Accept other units such as % (percent of element like transform), vh, vw, etc.
   data.scrollDistance = data['distance'] || $el.height() + windowHeight;
